@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+
+
+
+*, *::after, *::before{
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-family: "Poppins";
+  background: #f5f5f5;
+}
+
+.app{
+  position: relative;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 48px;
+  
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0px 20px;
+}
+
+/* Header */
+
+header{
+  position: relative;
+}
+
+nav.grid{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  max-width: 1600px;
+  align-items: center;
+  height: 130px;
+  margin: 0px auto;
+
+  overflow: hidden;
+}
+
+
+nav img{
+  grid-column: span 4;
+  height: 130px;
+  margin: auto;
+  scale: 2.8;
+
+  cursor: pointer;
+}
+
+nav .left-nav a, nav .right-nav a{
+  text-decoration: none;  
+  color: black;
+  font-size: 24px;
+}
+nav .left-nav{
+
+  grid-column: span 4;
+}
+nav .left-nav a{
+  margin-right: 46px;
+}
+
+nav .right-nav{
+  grid-column: span 4;
+  justify-self: right;
+}
+
+nav .right-nav a{
+  margin-left: 46px;
+}
+
+
+
+
+/* HomePage */
+
+/* Banner section */
+.home{
+    margin-top: 160px;
+}
+
+.banner{
+  position: relative;
+  grid-column: span 12;
+}
+
+.banner img{
+  grid-column: span 12 ;
+  width: 100%;
+  height: 640px ;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.banner h1{
+  position: absolute;
+  background: none;
+  color: white;
+  font-size: 4em;
+
+  bottom: 30%;
+  left: 10%;
+
+  text-shadow: 4px 4px 0 #000000;
+  
+}
+
+.banner p{
+  position: absolute;
+  background: none;
+  color: white;
+  font-size: 1em;
+  width: 50%;
+  bottom: 20%;
+  left: 10%;
+
+  /* text-shadow: 4px 4px 0 #000000; */
+}
+
+
+.home .banner button{
+  position: absolute;
+  font-size: 1.5em;
+  font-weight: 800;
+  background-color: #f5f5f5;
+  color: black;
+  padding: 0.5rem 2.4rem;
+  border-radius: 2rem;
+  bottom: 20%;
+  right: 10%;
+
+  /* box-shadow: 0px 2px 0 #000000; */
+}
+
+/* New collection section */
+.new-collection-section{
+    margin-top: 80px;
+}
+
+
+.new-collection-section .content{
+    text-align: center;
+    grid-column: 3/ span 8;
+}
+
+.new-collection-section .content h1{
+  font-size: 3em;
+}
+
+
+.new-collection-section .listItem{
+  text-align: center;
+  grid-column: span 12;
+  grid-row: 2;
+  margin-top: 0;
+}
+
+.new-collection-section .product-item{
+  grid-column: span 4;
+  text-align: left;
+}
+
+.new-collection-section .product-item img{
+  width: 100%;
+  height: 425px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 16px;
+}
+
+/* jewelry section */
+.jewelry-section img{
+  grid-column: span 12 ;
+  width: 100%;
+  height: 420px ;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.jewelry-section .content{
+  text-align: center;
+  grid-column: 3/ span 8;
+}
+
+.jewelry-section .content button{
+  font-size: 1.5em;
+  font-weight: 800;
+  background-color: black;
+
+  color: white;
+  padding: 0.5rem 2.4rem;
+  border-radius: 2rem;
+
+  margin-top: 1.5rem;
+}
+
+/* Category */
+.category .category-item{
+  position: relative;
+  grid-column: span 4;
+}
+.category .category-item img{
+
+  width: 100%;
+  height: 425px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 16px;
+}
+
+
+.category .category-item .content{
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  background: none;
+}
+
+.category .content h1{
+  background: none;
+  color: white;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+
+.category .content button{
+  font-size: 1.5em;
+  font-weight: 400;
+  background-color: black;
+
+  color: white;
+  padding: 0.5rem 2.4rem;
+  border-radius: 2rem;
+
+}
+
+/* footer section */
+
+.footer{
+
+}
+
+.footer .information{
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.footer .information img{
+  grid-column: 2/ span 3;
+  width: 100%;
+  
+}
+
+.footer .information .side-infomation{
+  
+  grid-column: span 2;
+  margin-left: 2em;
+}
+
+.bottom-footer{
+  height: 100px;
+  min-width: 100vw;
+  background-color: black;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.bottom-footer h3{
+  background: none;
+  color: white;
+
+  grid-column: 2 / span 2;
+}
+
+.bottom-footer div{
+  grid-column: 4 /span 8;
+  background: none;
+  justify-self: end;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-footer div p{
+  background: none;
+  color: white;
+
+  margin-right: 24px;
+
+}
+
+
+/* login page */
+
+.login-page{
+  margin-top: 180px;
+}
+
+
+.login-box .content{
+  grid-column: 4 /span 6;
+  text-align: center;
+}
+
+.login-box .form{
+  
+  grid-column: 5 /span 4 ;
+  grid-row: 2;
+}
+
+
+.login-box .form .input-group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+.login-box .form label{
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.login-box .form input{
+  font-size: 16px;
+  border: 1px solid #E8E8E8;
+  height: 44px;
+  
+  padding: 8px 16px;
+  margin: 0px 4px;
+  margin-bottom: 12px;
+}
+
+.login-box .form .login-button{
+
+  height: 44px;
+  width: 100%;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.login-box .form .login-button:disabled{
+  background-color: #757575;
+  cursor: not-allowed;
+}
+
+.login-box .form .action{
+  
+  display: flex;
+  justify-content: space-evenly;
+  margin: 24px 20px;
+}
+
+.login-box .form .action button{
+  color: #757575 ;
+  cursor: pointer;
+  
+}
+
+
+/* Products lists page */
+
+.product-page{
+  margin-top: 160px;
+}
+
+.product-page .title-page h1{
+  grid-column: span 3;
+  
+  border-bottom: 1px solid grey;
+
+  padding-bottom: 12px;
+  
+}
+
+.product-page .product-item{
+  grid-column: span 3;
+}
+
+.product-page .products-list .product-item img{
+  width: 100%;
+  height: 425px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 16px;
+}
+
+
+/* Product information */
+.product-detail{
+  margin-top: 160px;
+}
+
+.product-detail img{
+  grid-column: span 5;
+  width: 100%;
+  height: 525px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 16px;
+}
+
+.product-detail .product-infomation{
+  grid-column: 6 / span 6;
+}
+
+.product-detail .product-infomation .product-name{
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+.product-detail .product-infomation .product-price{
+  font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
